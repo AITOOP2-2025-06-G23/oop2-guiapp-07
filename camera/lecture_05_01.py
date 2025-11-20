@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 
 # インポート元が循環参照を起こさない限り、このインポートは正しい
-from my_module.K21999.lecture05_camera_image_capture import (
+from my_module.lecture05_camera_image_capture import (
     MyVideoCapture,
 )
 
@@ -20,8 +20,8 @@ def process_image(captured_frame: np.ndarray):
     script_dir = os.path.dirname(current_file_path)
 
     # フォルダ構造は 'src/k24122.py' または 'K24122/lecture_05_01.py' から
-    # 2階層上のプロジェクトルート ('05/oop2-2025-05-G17') を探す
-    project_root = os.path.dirname(os.path.dirname(script_dir))
+    # 1階層上のプロジェクトルート ('05/oop2-2025-05-G17') を探す
+    project_root = os.path.dirname(script_dir)
 
     # 画像ファイルへのフルパスを作成
     google_path = os.path.join(project_root, "images", "google.png")  # 合成元の画像
@@ -85,7 +85,7 @@ def process_image(captured_frame: np.ndarray):
     cv2.destroyAllWindows()
 
 
-def k24122():
+def photo():
     """
     カメラキャプチャを行い、取得したフレームを画像合成処理に渡すメイン関数
     """
@@ -108,4 +108,4 @@ def k24122():
 
 
 if __name__ == "__main__":
-    k24122()
+    photo()
