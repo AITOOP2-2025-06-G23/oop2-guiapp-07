@@ -1,6 +1,6 @@
 from PySide6.QtWidgets import QWidget, QPushButton, QVBoxLayout
-from camera._controller import photo           # ← あなたのコード
-from image_processing.compose import process_image   # ← 加工関数
+from camera.camera_controller import photo  # ← あなたのコード
+from image_processing.compose import process_image  # ← 加工関数
 
 
 class MainWindow(QWidget):
