@@ -31,3 +31,6 @@ project/
 5. yesの場合:加工して保存yes/noボタン実装
 6. noの場合: 保存yes/noボタン実装
 7. 保存の選択をしたら，logの表示とスタート画面に戻る
+
+## GPTリンク
+https://chatgpt.com/share/691ea706-1200-8008-96fd-33d2c8f1000a
