@@ -1,4 +1,5 @@
-from camera.lecture_05_01 import photo
+from camera.camera_controller import photo
+from image_processing.compose import process_image
 
 if __name__ == "__main__":
-    photo()
+    photo(process_image)
